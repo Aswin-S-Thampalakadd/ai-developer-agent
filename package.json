@@ -1,0 +1,25 @@
+{
+  "name": "ai-developer-agent",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aswin-S-Thampalakadd/ai-developer-agent.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aswin-S-Thampalakadd/ai-developer-agent/issues"
+  },
+  "homepage": "https://github.com/Aswin-S-Thampalakadd/ai-developer-agent#readme",
+  "description": "",
+  "private": "true",
+  "type": "module",
+  "dependencies": {
+    "concurrently": "^10.0.6"
+  }
+}
