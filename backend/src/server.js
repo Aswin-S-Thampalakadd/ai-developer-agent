@@ -1,6 +1,7 @@
 import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
+import workspaceRoutes from "./routes/workspaceRoutes.js";
 
 dotenv.config();
 
@@ -15,6 +16,7 @@ const OLLAMA_MODEL = process.env.OLLAMA_MODEL || "qwen3:latest";
 app.use(cors());
 
 app.use(express.json({ limit: "1mb" }));
+app.use("/api/workspace", workspaceRoutes);
 
 app.get("/api/health", async (req, res) => {
   try {
