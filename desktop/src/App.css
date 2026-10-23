@@ -529,3 +529,23 @@ button:disabled {
     display: none;
   }
 }
+
+.message-files-used {
+  margin-top: 12px;
+  padding: 10px 12px;
+  color: #a5b4fc;
+  background: #171923;
+  border: 1px solid #303347;
+  border-radius: 8px;
+  font-size: 12px;
+}
+
+.message-files-used ul {
+  margin: 8px 0 0;
+  padding-left: 18px;
+}
+
+.message-files-used li {
+  margin-top: 4px;
+  overflow-wrap: anywhere;
+}

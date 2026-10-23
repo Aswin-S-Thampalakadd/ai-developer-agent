@@ -93,6 +93,7 @@ function App() {
         {
           role: "assistant",
           content: data.message || "The model returned an empty response.",
+          filesUsed: data.projectContext?.filesUsed ?? [],
         },
       ]);
     } catch (err) {
@@ -274,6 +275,17 @@ function App() {
                       </span>
 
                       <div className="message-content">{message.content}</div>
+
+                      {message.filesUsed?.length > 0 && (
+                        <div className="message-files-used">
+                          <strong>Project files used:</strong>
+                          <ul>
+                            {message.filesUsed.map((file) => (
+                              <li key={file}>{file}</li>
+                            ))}
+                          </ul>
+                        </div>
+                      )}
                     </div>
                   </article>
                 );
